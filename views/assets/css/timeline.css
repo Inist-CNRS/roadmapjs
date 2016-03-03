@@ -402,6 +402,8 @@
     transform: translateX(0);
   }
 }
+
+/* Personalisation des CSS */
 .cd-image-cover {
   float: right;
   margin-left: 10px;
@@ -430,4 +432,6 @@
 .cd-goal {
   background-color: #FFA621;
 }
-
+.cd-default {
+  background-color: #B6C9D4; 
+}

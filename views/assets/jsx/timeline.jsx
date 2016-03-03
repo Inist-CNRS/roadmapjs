@@ -3,16 +3,24 @@ var TimelineBlock = React.createClass({
   render: function() {
     return (
       <div className="cd-timeline-block">
-          <div className="cd-timeline-img">
-            <img src="/assets/img/cd-icon-picture.svg" alt="Picture" />
+
+          <div className="cd-timeline-img cd-presentation" style={{display: 'none'}}>
+            <img src="/assets/img/presentation.png" alt="Présentation" />
           </div>
+          <div className="cd-timeline-img cd-sprintreview" style={{display: 'none'}}>
+            <img src="/assets/img/sprintreview.png" alt="Revue de sprint" />
+          </div>
+          <div className="cd-timeline-img cd-goal" style={{display: 'none'}}>
+            <img src="/assets/img/cd-icon-location.svg" alt="Point d'étape" />
+          </div>
+          <div className="cd-timeline-img cd-default" style={{display: 'block'}}></div>
           <div className="cd-timeline-content">
-            <a className="cd-link" id={this.props.block.id} href={'#' + this.props.block.id}>
-              <h2>{this.props.title}</h2>
+            <a className="cd-link" id={this.props.block.idCard} href={'#' + this.props.block.idCard}>
+              <h2>{this.props.block.title}</h2>
             </a>
             <p dangerouslySetInnerHTML={{__html: this.props.children}} />
             <a href="#0" className="cd-read-more">Read more</a>
-            <span className="cd-date">{this.props.date}</span>
+            <span className="cd-date">{this.props.block.rangeLabel}</span>
           </div>
       </div>
     );
@@ -23,7 +31,7 @@ var TimelineBlocks = React.createClass({
   render: function() {
     var blockNodes = this.props.data.map(function(block) {
       return (
-        <TimelineBlock block={block} title={block.title} date={block.rangeLabel}>{block.desc}</TimelineBlock>
+        <TimelineBlock block={block}>{block.desc}</TimelineBlock>
       );
     });
     return (
