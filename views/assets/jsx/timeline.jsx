@@ -85,6 +85,9 @@ var qs = require('qs');
 var ask = {
   "alt" : "raw",
   "$query" : {
+    "_content.json.date" : {
+      "$gte" : new Date(2015, 4, 24, 18, 30)
+    },
     "$or": [
       {
         "_content.json.projectKey" : "ISTEX-RD"
@@ -96,7 +99,11 @@ var ask = {
   },
   "$limit" : 20
 }
+var opt = {
+  filter: bury,
+  encode: false
+}
 ReactDOM.render(
-  <TimelineBox url={String('/data/*?').concat(qs.stringify(ask, { encode: false }))} pollInterval={2000} />,
+  <TimelineBox url={String('/data/*?').concat(qs.stringify(ask, opt))} pollInterval={2000} />,
   document.getElementById('example')
 );
