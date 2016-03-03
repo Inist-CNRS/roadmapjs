@@ -10,7 +10,6 @@ module.exports = {
   "browserifyModules" : [ "qs", "async", "jquery",  "react", "react-dom" ],
   "rootURL" : "index.html",
   "routes": [
-    "echo.js",
     "table.js"
   ],
   "heartbeats": [
@@ -28,6 +27,10 @@ module.exports = {
       "options" : {
         "cutter" : "!.*"
       }
+    },
+    {
+      "script": "card.js",
+      "pattern": "**/*.json"
     }
   ]
 };
