@@ -5,6 +5,10 @@ roadmapjs:
   volumes:
     - ./data:/app/data
     - ./config.local.js:/app/config.local.js
+  environment:
+    http_proxy:  ${http_proxy}
+    https_proxy: ${https_proxy}
+    NODE_ENV: "production"
   ports:
     - 3000:3000
 
