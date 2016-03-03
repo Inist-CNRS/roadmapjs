@@ -1,5 +1,5 @@
 roadmapjs:
-  image: roadmapjs:latest
+  image: inistcnrs/roadmapjs:latest
   links:
     - roadmapjs_db:mongodb
   volumes:
