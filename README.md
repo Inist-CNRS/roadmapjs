@@ -46,3 +46,14 @@ With docker (need a make ``build-docker`` before):
 ```shell
 make start-docker
 ```
+
+## Developements
+
+To start roadmapjs (nodejs app + mongodb) on a local git clone, you can follow these steps:
+```shell
+git clone https://github.com/Inist-CNRS/roadmapjs.git
+cd roadmapjs
+make start-dev
+# the app is listening at http://127.0.0.1:3000/
+# then open another terminal and your can freely edit the code
+```
