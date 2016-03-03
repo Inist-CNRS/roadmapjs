@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "./roadmapjs",
-    "debug": "DEBUG=castor*,console* ./roadmapjs",
+    "debug": "DEBUG=castor*,console* ./node_modules/.bin/nodemon ./roadmapjs",
+    "debug-docker": "docker-compose -f ./docker-compose.dev.yml up",
     "lint": "jshint --exclude-path node_modes */**/*.js"
   },
   "keywords": [],

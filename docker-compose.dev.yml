@@ -5,6 +5,8 @@ roadmapjs:
   volumes:
     - .:/app
   environment:
+    http_proxy:  ${http_proxy}
+    https_proxy: ${https_proxy}
     NODE_ENV: "development"
     DEBUG: "castor*,console*"
   working_dir: /app
