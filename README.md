@@ -19,9 +19,7 @@ With docker:
 ```shell
 git clone https://github.com/Inist-CNRS/roadmapjs.git
 cd roadmapjs
-npm start-docker
-# or just this:
-# docker-compose up
+docker-compose up
 ```
 
 It will download and run the [inistcnrs/roadmapjs](https://hub.docker.com/r/inistcnrs/roadmapjs/) docker image sharing ``./data/`` and ``./config.local.js`` with the docker container.

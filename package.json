@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start": "./roadmapjs",
-    "start-docker": "docker-compose up",
     "debug": "DEBUG=castor*,console* ./roadmapjs",
     "debug-docker": "docker-compose -f ./docker-compose.dev.yml up",
     "lint": "jshint --exclude-path node_modes */**/*.js"
