@@ -18,6 +18,10 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "reunion",
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Réunion",
       "Sprint review"
     ]
@@ -41,6 +45,10 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "reunion",
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Réunion",
       "Sprint review"
     ]
@@ -64,6 +72,10 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "reunion",
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Réunion",
       "Sprint review"
     ]
@@ -87,6 +99,10 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "reunion",
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Réunion",
       "Sprint review"
     ]
@@ -110,6 +126,9 @@
     "image_medium": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e7b7/150x175/449b26e19bb1a1a943637d25dfce399e/upload_2015-04-16_at_1.42.33_pm.png",
     "image_big": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e7b7/418x489/af1eb9a491a0fca7380b332cba50ad1e/upload_2015-04-16_at_1.42.33_pm.png",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -132,6 +151,9 @@
     "image_medium": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e793/150x112/1dc52bcac0f2ba30e96e66893fbb41fd/upload_2015-04-04_at_3.00.04_pm.png",
     "image_big": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e793/600x448/6a4ed71dd05e0662bdcae3edf079e3a3/upload_2015-04-04_at_3.00.04_pm.png",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -154,6 +176,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -176,6 +201,10 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "reunion",
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Réunion",
       "Sprint review"
     ]
@@ -199,6 +228,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -221,6 +253,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -243,6 +278,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -265,6 +303,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -286,7 +327,8 @@
     "image_small": "",
     "image_medium": "",
     "image_big": "",
-    "labels": []
+    "labels": [],
+    "labelsOriginal": []
   },
   {
     "idBoard": "vJQsvUSO",
@@ -307,6 +349,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Sprint review"
     ]
   },
@@ -329,6 +374,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Sprint review"
     ]
   },
@@ -350,7 +398,8 @@
     "image_small": "",
     "image_medium": "",
     "image_big": "",
-    "labels": []
+    "labels": [],
+    "labelsOriginal": []
   },
   {
     "idBoard": "vJQsvUSO",
@@ -371,6 +420,9 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "communication"
+    ],
+    "labelsOriginal": [
       "Communications"
     ]
   },
@@ -392,7 +444,8 @@
     "image_small": "",
     "image_medium": "",
     "image_big": "",
-    "labels": []
+    "labels": [],
+    "labelsOriginal": []
   },
   {
     "idBoard": "vJQsvUSO",
@@ -412,7 +465,8 @@
     "image_small": "",
     "image_medium": "",
     "image_big": "",
-    "labels": []
+    "labels": [],
+    "labelsOriginal": []
   },
   {
     "idBoard": "vJQsvUSO",
@@ -432,7 +486,8 @@
     "image_small": "",
     "image_medium": "",
     "image_big": "",
-    "labels": []
+    "labels": [],
+    "labelsOriginal": []
   },
   {
     "idBoard": "vJQsvUSO",
@@ -453,6 +508,10 @@
     "image_medium": "",
     "image_big": "",
     "labels": [
+      "reunion",
+      "sprint-review"
+    ],
+    "labelsOriginal": [
       "Réunion",
       "Sprint review"
     ]

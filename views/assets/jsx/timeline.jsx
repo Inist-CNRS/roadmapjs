@@ -1,19 +1,27 @@
 
 var TimelineBlock = React.createClass({
   render: function() {
+    var displaySR      = this.props.block.labels.indexOf('sprint-review') !== -1 ? 'block' : 'none';
+    var displayCOMM    = this.props.block.labels.indexOf('communication') !== -1 ? 'block' : 'none';
+    var displayGOAL    = this.props.block.labels.indexOf('objectif') !== -1 ? 'block' : 'none';
+    var displayREU     = this.props.block.labels.indexOf('reunion') !== -1 ? 'block' : 'none';
+    var displayDEFAULT = (displaySR == 'none' && displayCOMM == 'none' && displayGOAL == 'none' && displayREU == 'none') ? 'block' : 'none';
     return (
       <div className="cd-timeline-block">
 
-          <div className="cd-timeline-img cd-presentation" style={{display: 'none'}}>
-            <img src="/assets/img/presentation.png" alt="Présentation" />
+          <div className="cd-timeline-img cd-reunion" style={{display: displayREU}}>
+            <img src="/assets/img/reunion.png" alt="Réunion" />
           </div>
-          <div className="cd-timeline-img cd-sprintreview" style={{display: 'none'}}>
+          <div className="cd-timeline-img cd-presentation" style={{display: displayCOMM}}>
+            <img src="/assets/img/presentation.png" alt="Communication" />
+          </div>
+          <div className="cd-timeline-img cd-sprintreview" style={{display: displaySR}}>
             <img src="/assets/img/sprintreview.png" alt="Revue de sprint" />
           </div>
-          <div className="cd-timeline-img cd-goal" style={{display: 'none'}}>
-            <img src="/assets/img/cd-icon-location.svg" alt="Point d'étape" />
+          <div className="cd-timeline-img cd-goal" style={{display: displayGOAL}}>
+            <img src="/assets/img/cd-icon-location.svg" alt="Objectif, fonctionnalité ..." />
           </div>
-          <div className="cd-timeline-img cd-default" style={{display: 'block'}}></div>
+          <div className="cd-timeline-img cd-default" style={{display: displayDEFAULT}}></div>
           <div className="cd-timeline-content">
             <a className="cd-link" id={this.props.block.idCard} href={'#' + this.props.block.idCard}>
               <h2>{this.props.block.title}</h2>
