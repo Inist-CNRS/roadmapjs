@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "^1.5.2",
-    "castor-core": "^3.0.1",
+    "castor-core": "^3.1.0",
     "castor-load": "^4.4.3",
     "castor-load-jsoncorpus": "^3.0.0",
     "debug": "^2.1.3",

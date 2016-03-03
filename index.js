@@ -1,4 +1,5 @@
-// to allow mongodb host and port injection thanks 
+'use strict'
+// to allow mongodb host and port injection thanks
 // to the MONGODB_PORT environment parameter
 // (docker uses it)
 var mongoHostPort = process.env.MONGODB_PORT ? process.env.MONGODB_PORT.replace('tcp://', '') : 'localhost:27017';
@@ -13,7 +14,7 @@ module.exports = {
   ],
   "heartbeats": [
     {
-      "beat" : 1,
+      "beat" : 3600,
       "require": "trello.js",
       "options" : {
       }
