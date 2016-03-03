@@ -13,7 +13,7 @@ var TimelineBlock = React.createClass({
             <img src="/assets/img/reunion.png" alt="Réunion" />
           </div>
           <div className="cd-timeline-img cd-presentation" style={{display: displayCOMM}}>
-            <img src="/assets/img/presentation.png" alt="Communication" />
+            <img src="/assets/img/communication.png" alt="Communication" />
           </div>
           <div className="cd-timeline-img cd-sprintreview" style={{display: displaySR}}>
             <img src="/assets/img/sprintreview.png" alt="Revue de sprint" />
