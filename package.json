@@ -33,6 +33,7 @@
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "nodemon": "^1.9.1"
   }
 }

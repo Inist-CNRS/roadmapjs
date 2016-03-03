@@ -10,7 +10,7 @@ roadmapjs:
   working_dir: /app
   ports:
     - 3000:3000
-  command: ./roadmapjs
+  command: ./node_modules/.bin/nodemon ./roadmapjs
 
 roadmapjs_db:
   image: mongo:3.0.7
