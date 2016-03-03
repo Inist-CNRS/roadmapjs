@@ -97,7 +97,12 @@ module.exports = function (targetDirectory,  config, trelloHarvesterCb) {
               }
 
               var result = {};
-              result.id     = item.id;
+              result.idBoard = board.idBoard;
+              result.boardName = boardInfo.name;
+              result.boardLink   = config.boards[boardKey].boardLink;
+              result.projectKey  = boardKey;
+              result.projectName = config.boards[boardKey].projectName;
+              result.idCard = item.id;
               result.idList = item.idList;
               result.listName   = boardLists[item.idList].listName;
               result.rangeLabel = boardLists[item.idList].rangeLabel;
