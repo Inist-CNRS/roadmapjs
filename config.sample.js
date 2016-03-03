@@ -1,3 +1,4 @@
+module.exports =
 {
   "trello" : {
     "key":   "YOUR KEY",
