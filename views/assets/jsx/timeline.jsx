@@ -39,7 +39,7 @@ var TimelineBlocks = React.createClass({
   render: function() {
     var blockNodes = this.props.data.map(function(block) {
       return (
-        <TimelineBlock block={block}>{block.desc}</TimelineBlock>
+        <TimelineBlock key={block._wid} block={block._content.json}>{block._content.desc}</TimelineBlock>
       );
     });
     return (
@@ -81,9 +81,22 @@ var TimelineBox = React.createClass({
   }
 });
 
-
-
+var qs = require('qs');
+var ask = {
+  "alt" : "raw",
+  "$query" : {
+    "$or": [
+      {
+        "_content.json.projectKey" : "ISTEX-RD"
+      },
+      {
+        "_content.json.projectKey" : "ISTEX-API"
+      }
+    ]
+  },
+  "$limit" : 20
+}
 ReactDOM.render(
-  <TimelineBox url="/assets/data.json" pollInterval={2000} />,
+  <TimelineBox url={String('/data/*?').concat(qs.stringify(ask, { encode: false }))} pollInterval={2000} />,
   document.getElementById('example')
 );
