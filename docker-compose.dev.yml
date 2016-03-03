@@ -1,0 +1,17 @@
+roadmapjs:
+  image: node:4.3.1
+  links:
+    - roadmapjs_db:mongodb
+  volumes:
+    - .:/app
+  environment:
+    NODE_ENV: "development"
+    DEBUG: "castor*,console*"
+  working_dir: /app
+  ports:
+    - 3000:3000
+  command: ./roadmapjs
+
+roadmapjs_db:
+  image: mongo:3.0.7
+  command: --smallfiles
