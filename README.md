@@ -4,13 +4,15 @@ Create a config.local.js containing:
 
 ```javascript
 module.exports = {
-  key:   'yourtrellokey',
-  token: 'yourtrellotoken',
-  boards: {
-    'ezPAARSE': {
-      projectName: 'ezPAARSE',
-      idBoard: 'vJQsvUSO',
-      boardLink: 'https://trello.com/b/vJQsvUSO/ezpaarse-roadmap'
+  trello : {
+    key:   'yourtrellokey',
+    token: 'yourtrellotoken',
+    boards: {
+      'ezPAARSE': {
+        projectName: 'ezPAARSE',
+        idBoard: 'vJQsvUSO',
+        boardLink: 'https://trello.com/b/vJQsvUSO/ezpaarse-roadmap'
+      }
     }
   }
 };
