@@ -1,0 +1,7 @@
+Dockerfile
+docker-compose.yml
+makefile
+.git
+data/*
+config.local.js
+npm-debug.log

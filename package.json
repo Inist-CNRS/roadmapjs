@@ -1,0 +1,37 @@
+{
+  "name": "roadmapjs",
+  "version": "0.0.0",
+  "description": "...",
+  "main": "index.js",
+  "bin": {
+    "roadmapjs": "./roadmapjs"
+  },
+  "scripts": {
+    "start": "./roadmapjs",
+    "lint": "jshint --exclude-path node_modes */**/*.js"
+  },
+  "keywords": [],
+  "contributors": [
+    "Stéphane Gully",
+    "Nicolas Thouvenin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "castor-core": "^3.0.1",
+    "castor-load": "^4.4.3",
+    "castor-load-jsoncorpus": "^3.0.0",
+    "debug": "^2.1.3",
+    "jquery": "^2.2.1",
+    "marked": "^0.3.3",
+    "moment": "^2.9.0",
+    "nconf": "^0.7.1",
+    "node-trello": "^1.0.1",
+    "qs": "^6.1.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
+}

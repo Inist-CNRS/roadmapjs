@@ -1,0 +1,13 @@
+roadmapjs:
+  image: roadmapjs:latest
+  links:
+    - roadmapjs_db:mongodb
+  volumes:
+    - ./data:/app/data
+    - ./config.local.js:/app/config.local.js
+  ports:
+    - 3000:3000
+
+roadmapjs_db:
+  image: mongo:3.0.7
+  command: --smallfiles

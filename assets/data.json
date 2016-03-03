@@ -1,0 +1,355 @@
+[
+  {
+    "id": "552fd53c62ee7518c462e7ac",
+    "idList": "552fd71d9853c5e0bc32fa0b",
+    "listName": "Septembre 2014 - Octobre 2014",
+    "rangeLabel": "entre septembre 2014 et octobre 2014",
+    "isRange": false,
+    "date": "2014-10-30",
+    "title": "ezPAARSE v2.0.0 - Administration des PKB",
+    "desc": "<p>L’enjeu de ce sprint est de mettre à disposition des bibliothécaires un outillage permettant de mieux superviser et mettre à jour les PKB de leur ezPAARSE. Une interface permettant de visualiser et de mettre à jour les PKB gérées par ezPAARSE a ainsi été mise à disposition.</p>\n",
+    "trelloLink": "https://trello.com/c/6bQt6m7r/13-ezpaarse-v2-0-0-administration-des-pkb",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Réunion",
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e7ab",
+    "idList": "552fd53c62ee7518c462e76a",
+    "listName": "Novembre 2014 - Décembre 2014",
+    "rangeLabel": "entre novembre 2014 et décembre 2014",
+    "isRange": false,
+    "date": "2014-12-18",
+    "title": "ezPAARSE 2.1.0 - NoSQL embarqué",
+    "desc": "<p>L’objectif principal de ce sprint est de permettre le stockage optimisé des PKB (qui deviennent volumineuses) dans une base de données NoSQL embarqué dans le logiciel ezPAARSE. Cette étape est indispensable pour permettre à ezPAARSE de monter en charge en terme de quantité de plateformes supportées.</p>\n<p>La base de données NoSQL a également pour vocation de stocker les comptes utilisateurs, les futures listes d’IP pour l’OpenAccess etc …</p>\n<p>Pendant ce sprint, nous avons été agréablement surpris de la rédaction d’un <a href=\"http://acrl.ala.org/techconnect/?p=4684\">article de blog comparant des outils de traitement de log ezproxy</a> (AWStats, Piwik, EZPaarse, un script Python fait maison, et l’outil propriétaire Splunk). Il a été rédigé par Lauren Magnuson et Robin Camille Davis membres de California State University Northridge que nous nous sommes empressés de contacter. Outre la bonne opération en terme de communication, leur article nous a permis de planifier l’amélioration d’une fonctionnalité d’ezPAARSE (le paramétrage du format de log).</p>\n",
+    "trelloLink": "https://trello.com/c/4jwSAwQt/12-ezpaarse-2-1-0-nosql-embarque",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Réunion",
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e7aa",
+    "idList": "552fd53c62ee7518c462e76b",
+    "listName": "Janvier 2015 - Février 2015",
+    "rangeLabel": "entre janvier 2015 et février 2015",
+    "isRange": false,
+    "date": "2015-02-05",
+    "title": "ezPAARSE v2.2.0 - Gestion des PKB de gros volume",
+    "desc": "<p>L’objectif de ce sprint est de gérer les PKB (publisher knowledge base) de gros volume à l’aide des outils NoSQL intégrés au sprint précédent.</p>\n<p>L’essentiel du travail a été la mise en oeuvre d’un nouveau module “castor-js” commun à d’autres projets INIST-CNRS. Ce module est destiné à gérer la synchronisation entre des données déposées sous forme de fichiers et leur accès en mémoire via une BDD NoSQL de façon à obtenir des accès rapides. Au niveau ezPAARSE, ce module répond à la problématique de synchronisation des PKB, en particulier lorsqu’elles deviennent très volumineuses comme dans le cas des listes d’e-books.</p>\n",
+    "trelloLink": "https://trello.com/c/V1Iu2JcL/11-ezpaarse-v2-2-0-gestion-des-pkb-de-gros-volume",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Réunion",
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e791",
+    "idList": "552fd53c62ee7518c462e76c",
+    "listName": "Mars 2015 - Avril 2015",
+    "rangeLabel": "entre mars 2015 et avril 2015",
+    "isRange": false,
+    "date": "2015-04-09",
+    "title": "ezPAARSE v2.3.0 - MVP Open Access",
+    "desc": "<p>L’objectif de ce sprint est la mise en place des fonctionnalités de base pour la gestion intelligente des logs issues de l’Open Access et des archives ouvertes. </p>\n<p>Il est possible de <a href=\"https://www.youtube.com/watch?v=1hKb_DO-p90\">revoir sur youtube la revue de sprint</a>.</p>\n<hr>\n<p>Ce qui caractérise ce type de plateforme :</p>\n<ul>\n<li>ils sont accessibles sans authentification (pas de login dans les log)</li>\n<li>le nom de domaine n’est pas présent dans les URL des log et l’analyse d’un fichier de log n’a besoin que d’un seul parseur</li>\n<li>ils sont massivement téléchargés par des robots qui “polluent” les consultations réelles des humains</li>\n</ul>\n<p>Par ailleurs, nous avons appris que <a href=\"https://twitter.com/libtechkat/status/584090975666102272\">Kat Greer</a> présentera comment elle utilise ezPAARSE dans son établissement à la conférence <a href=\"http://www.usg.edu/galileo/gil/conference/\">GUMG15</a> aux Etats-Unis pas loin de la ville d&#39;Atlanta. C&#39;est à notre connaissance la première fois qu&#39;une personne non membre de l&#39;équipe ezPAARSE présente son retour d&#39;expérience dans une conférence.</p>\n",
+    "trelloLink": "https://trello.com/c/JK25Byzg/6-ezpaarse-v2-3-0-mvp-open-access",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Réunion",
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e7b7",
+    "idList": "552fd53c62ee7518c462e76c",
+    "listName": "Mars 2015 - Avril 2015",
+    "rangeLabel": "entre mars 2015 et avril 2015",
+    "isRange": false,
+    "date": "2015-04-14",
+    "title": "Parsathon ezPAARSE à Paris",
+    "desc": "<p>Journée d&#39;atelier consacrée à :</p>\n<ul>\n<li>la prise en main d&#39;ezPAARSE</li>\n<li>la réalisation d&#39;analyse de nouvelles plateformes éditeurs sur AnalogIST</li>\n<li><p>la réalisation des parseurs associés</p>\n</li>\n<li><p><a href=\"http://www.inist.fr/?Parsathon-ezPAARSE-a-l-ENSAM-Paris&amp;lang=fr\">Annonce sur le site de l&#39;INIST</a></p>\n</li>\n</ul>\n<p>Bilan : 7 nouvelles plateformes recensées, 19 plateformes en cours d&#39;analyse, 2 parseurs en cours d&#39;implémentation</p>\n",
+    "trelloLink": "https://trello.com/c/63DH3d1w/17-parsathon-ezpaarse-a-paris",
+    "image_small": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e7b7/70x50/1f1fd617f570be29288d7d7401b7e5f8/upload_2015-04-16_at_1.42.33_pm.png",
+    "image_medium": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e7b7/150x175/449b26e19bb1a1a943637d25dfce399e/upload_2015-04-16_at_1.42.33_pm.png",
+    "image_big": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e7b7/418x489/af1eb9a491a0fca7380b332cba50ad1e/upload_2015-04-16_at_1.42.33_pm.png",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e793",
+    "idList": "552fd53c62ee7518c462e76c",
+    "listName": "Mars 2015 - Avril 2015",
+    "rangeLabel": "entre mars 2015 et avril 2015",
+    "isRange": false,
+    "date": "2015-03-30",
+    "title": "Présentation d'ezPAARSE à l'UKSG (Glasgow, 3 jours)",
+    "desc": "<ul>\n<li><a href=\"http://www.inist.fr/?Presentation-ezPAARSE-a-l-UKSG\">Annonce sur le site de l&#39;INIST</a></li>\n</ul>\n",
+    "trelloLink": "https://trello.com/c/Asz8QNPR/8-presentation-d-ezpaarse-a-l-uksg-glasgow-3-jours",
+    "image_small": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e793/70x50/bdff4c6cdad7a1e9ff57fac8ecb929c4/upload_2015-04-04_at_3.00.04_pm.png",
+    "image_medium": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e793/150x112/1dc52bcac0f2ba30e96e66893fbb41fd/upload_2015-04-04_at_3.00.04_pm.png",
+    "image_big": "https://trello-attachments.s3.amazonaws.com/552fd53c62ee7518c462e769/552fd53c62ee7518c462e793/600x448/6a4ed71dd05e0662bdcae3edf079e3a3/upload_2015-04-04_at_3.00.04_pm.png",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e78c",
+    "idList": "552fd53c62ee7518c462e76c",
+    "listName": "Mars 2015 - Avril 2015",
+    "rangeLabel": "entre mars 2015 et avril 2015",
+    "isRange": false,
+    "date": "2015-03-17",
+    "title": "Webex ezPAARSE avec le groupe de travail ICOLC sur les indicateurs",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/RFN5ifwX/2-webex-ezpaarse-avec-le-groupe-de-travail-icolc-sur-les-indicateurs",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "552fd53c62ee7518c462e7ad",
+    "idList": "552fd53c62ee7518c462e76d",
+    "listName": "Mai 2015 - Juin 2015",
+    "rangeLabel": "entre mai 2015 et juin 2015",
+    "isRange": false,
+    "date": "2015-06-11",
+    "title": "ezPAARSE v2.4.0 - Installation optimisée - Docker",
+    "desc": "<p>Depuis l&#39;ajout de la dépendance à la base de données MongoDB, ezPAARSE ne s&#39;installe plus aussi simplement que souhaité. L&#39;objectif principal de ce sprint est donc d&#39;améliorer la procédure d&#39;installation dans l&#39;objectif de permettre une installation &quot;tout en un&quot; et en quelques clics pour l&#39;utilisateur final. </p>\n<hr>\n<p>Les principales thématiques de travail sont les suivantes :</p>\n<ul>\n<li>Virtualiser ezPAARSE pour faciliter installation cross-plateforme (utilisation de <a href=\"http://www.docker.com/\">Docker</a> et <a href=\"http://boot2docker.io/\">Boot2docker</a>)</li>\n<li>Enrichissement par API HAL</li>\n<li>Etude sur <a href=\"http://ezpaarse.couperin.org/doc/doubleclick.html#paramtres-headers\">Double-Click-Mixed</a> sur 1 mois de log de la plateforme Elsevier pour comparer la surévaluation des stats COUNTER</li>\n<li>Traitement de l&#39;échantillon de log de HAL par ezPAARSE pour permettre une comparaison avec les statistiques générées coté HAL</li>\n</ul>\n",
+    "trelloLink": "https://trello.com/c/bYJFCRPO/14-ezpaarse-v2-4-0-installation-optimisee-docker",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Réunion",
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "5538a06b701f9d15a04b8f8b",
+    "idList": "552fd53c62ee7518c462e76d",
+    "listName": "Mai 2015 - Juin 2015",
+    "rangeLabel": "entre mai 2015 et juin 2015",
+    "isRange": false,
+    "date": "2015-05-19",
+    "title": "Présentation et démo d'ezPAARSE aux CIESR à Avignon",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/wGdGRcxW/21-presentation-et-demo-d-ezpaarse-aux-ciesr-a-avignon",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "5538a0b80d3121dabfa946c9",
+    "idList": "552fd53c62ee7518c462e76d",
+    "listName": "Mai 2015 - Juin 2015",
+    "rangeLabel": "entre mai 2015 et juin 2015",
+    "isRange": false,
+    "date": "2015-05-27",
+    "title": "Présentation du poster AnalogIST aux JABES 2015 à Montpellier",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/C400xPTD/22-presentation-du-poster-analogist-aux-jabes-2015-a-montpellier",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "5538a60d832fd324a26eff17",
+    "idList": "552fd53c62ee7518c462e76d",
+    "listName": "Mai 2015 - Juin 2015",
+    "rangeLabel": "entre mai 2015 et juin 2015",
+    "isRange": false,
+    "date": "2015-05-26",
+    "title": "Présentation d'un poster ezPAARSE à QQML 2015",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/Q7Wl06XP/23-presentation-d-un-poster-ezpaarse-a-qqml-2015",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "5538a6759a4d14fea334d570",
+    "idList": "552fd53c62ee7518c462e76d",
+    "listName": "Mai 2015 - Juin 2015",
+    "rangeLabel": "entre mai 2015 et juin 2015",
+    "isRange": false,
+    "date": "2015-06-05",
+    "title": "Formation et parsathon ezPAARSE à l'ENSSIB à Lyon",
+    "desc": "<p>à l&#39;ENSSIB</p>\n",
+    "trelloLink": "https://trello.com/c/xfqSwkl6/24-formation-et-parsathon-ezpaarse-a-l-enssib-a-lyon",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "556db95f4a31f15bf0618aa4",
+    "idList": "552fd53c62ee7518c462e76e",
+    "listName": "Juillet 2015 - Aout 2015",
+    "rangeLabel": "entre juillet 2015 et août 2015",
+    "isRange": true,
+    "date": "2015-07-17",
+    "title": "Enrichissement des DOI par crossref dans le but entre autre d'obtenir des datations",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/nZOENt9Z/26-enrichissement-des-doi-par-crossref-dans-le-but-entre-autre-d-obtenir-des-datations",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": []
+  },
+  {
+    "id": "55880863fa4d4f604b3e956c",
+    "idList": "552fd53c62ee7518c462e76e",
+    "listName": "Juillet 2015 - Aout 2015",
+    "rangeLabel": "entre juillet 2015 et août 2015",
+    "isRange": true,
+    "date": "2015-07-17",
+    "title": "ezPAARSE v2.5.0 - MVP de l'application dédiée à l'analyse des plateformes (AnalogIST NG)",
+    "desc": "<p>L&#39;objectif de ce sprint est de développer une première version d&#39;une application dédiée à l&#39;analyse de plateforme en remplacement du wiki analogist. Ceci dans le but de simplifier le processus d&#39;analyse des URL des plateformes des éditeurs scientifique.</p>\n<p>Son petit nom : AnalogIST NG</p>\n",
+    "trelloLink": "https://trello.com/c/lPxguZfp/28-ezpaarse-v2-5-0-mvp-de-l-application-dediee-a-l-analyse-des-plateformes-analogist-ng",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "561273f3c2d5456b9d986ad6",
+    "idList": "556db6d5ab45cb064f095980",
+    "listName": "Septembre 2015 - Octobre 2015",
+    "rangeLabel": "entre septembre 2015 et octobre 2015",
+    "isRange": false,
+    "date": "2015-10-08",
+    "title": "ezPAARSE v2.6.0 - Validation de l’interface AnalogIST NG",
+    "desc": "<p>Ce sprint se situe dans la continuité du précédent avec la confortation des propositions de la nouvelle interface d’AnalogIST. \nLa sprint review intégrera une présentation des résultats apportés par la fonctionnalité de dédoublonnage mixte (visualisation d’un article PDF ou HTML successifs à cause de la navigation imposée par la conception de la plateforme éditeur). \nSylvain Castagnos présentera l’étude réalisée dans le cadre des perspectives de collaboration avec l’équipe KIWI du Loria sur les données produites par ezPAARSE (systèmes de recommandations).</p>\n",
+    "trelloLink": "https://trello.com/c/ma8Zw2uJ/30-ezpaarse-v2-6-0-validation-de-l-interface-analogist-ng",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Sprint review"
+    ]
+  },
+  {
+    "id": "556db6ed3ca782ad57d4ada0",
+    "idList": "556db6d5ab45cb064f095980",
+    "listName": "Septembre 2015 - Octobre 2015",
+    "rangeLabel": "entre septembre 2015 et octobre 2015",
+    "isRange": true,
+    "date": "2015-09-16",
+    "title": "Enquête de dissémination du logiciel",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/rsCjc7Kb/25-enquete-de-dissemination-du-logiciel",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": []
+  },
+  {
+    "id": "55e74e1e391a1f72547f7b4a",
+    "idList": "556db6d5ab45cb064f095980",
+    "listName": "Septembre 2015 - Octobre 2015",
+    "rangeLabel": "entre septembre 2015 et octobre 2015",
+    "isRange": false,
+    "date": "2015-10-21",
+    "title": "Présentation d'ezPAARSE à Internet Librarian 2015 à Londres",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/2iq0B4wI/29-presentation-d-ezpaarse-a-internet-librarian-2015-a-londres",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Communications"
+    ]
+  },
+  {
+    "id": "561640075bd703f319712138",
+    "idList": "556db6d5ab45cb064f095980",
+    "listName": "Septembre 2015 - Octobre 2015",
+    "rangeLabel": "entre septembre 2015 et octobre 2015",
+    "isRange": false,
+    "date": "2015-11-05",
+    "title": "ezPAARSE v2.7.0 - ...",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/2PGkahW2/31-ezpaarse-v2-7-0",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": []
+  },
+  {
+    "id": "5640573e632f640356315e66",
+    "idList": "56127408205865cc09cf4a84",
+    "listName": "Novembre 2015 - Décembre 2015",
+    "rangeLabel": "entre novembre 2015 et décembre 2015",
+    "isRange": true,
+    "date": "2015-11-16",
+    "title": "ezPAARSE v2.8.0",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/Q8s40DM2/32-ezpaarse-v2-8-0",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": []
+  },
+  {
+    "id": "56405753498116a3c22ccc75",
+    "idList": "56127408205865cc09cf4a84",
+    "listName": "Novembre 2015 - Décembre 2015",
+    "rangeLabel": "entre novembre 2015 et décembre 2015",
+    "isRange": false,
+    "date": "2015-12-02",
+    "title": "Comité technique ezPAARSE",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/5tiwFPeb/33-comite-technique-ezpaarse",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": []
+  },
+  {
+    "id": "552fd53c62ee7518c462e7bf",
+    "idList": "5640570d98dd4f5576fd07e0",
+    "listName": "Décembre 2015 - Janvier 2016",
+    "rangeLabel": "entre décembre 2015 et janvier 2016",
+    "isRange": true,
+    "date": "2015-12-17",
+    "title": "Visualiser ses résultats en un clic avec ezVis",
+    "desc": "",
+    "trelloLink": "https://trello.com/c/JlNdbT4I/19-visualiser-ses-resultats-en-un-clic-avec-ezvis",
+    "image_small": "",
+    "image_medium": "",
+    "image_big": "",
+    "labels": [
+      "Réunion",
+      "Sprint review"
+    ]
+  }
+]
