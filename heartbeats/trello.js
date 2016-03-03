@@ -6,15 +6,10 @@ var path = require('path')
   , harvester  = require('../helpers/trello-harvester.js')
   ;
 
-
-
-
 module.exports = function(options, core) {
   options = options || {};
   var targetDirectory = core.config.get('dataPath');
   var config = core.config.get('trello');
-
-  debug('config trello', config);
 
   // at the launch
   harvester(targetDirectory, config, function() {
