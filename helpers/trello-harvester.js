@@ -8,6 +8,7 @@ var path = require('path')
   , fs       = require('fs')
   , marked   = require('marked')
   , async    = require('async')
+  , latinize = require('latinize')
   ;
 
 var errors = [];
@@ -122,8 +123,15 @@ module.exports = function (targetDirectory,  config, trelloHarvesterCb) {
               item.attachments[0].previews[4].url : '';
               debug('[' + boardKey + '] This card has been found: ' + item.name);
               result.labels = [];
+              result.labelsOriginal = [];
               item.labels.forEach(function (elt) {
-                result.labels.push(elt.name);
+                result.labelsOriginal.push(elt.name);
+                // transforms
+                //   "Sprint Review" to "sprint-review"
+                //   "Communications" to "communication"
+                //   "Réunion" to "reunion"
+                var label = latinize(elt.name.toLowerCase().trim().replace(/s$/, '').replace(' ', '-'));
+                result.labels.push(label);
               });
               project.push(result);
             });
