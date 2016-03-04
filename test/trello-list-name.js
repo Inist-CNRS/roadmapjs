@@ -69,4 +69,11 @@ describe('the trello list name parser', function () {
     assert.equal(range[1].format('YYYY-MM-DD'), '2016-07-01');
   });
 
+  var listNameTA3 = '2ème trimestre 2016';
+  it('should parse "' + listNameTA3 + '"', function() {
+    var range = tlnp(listNameTA3);
+    assert.equal(range[0].format('YYYY-MM-DD'), '2016-04-01');
+    assert.equal(range[1].format('YYYY-MM-DD'), '2016-07-01');
+  });
+
 });
