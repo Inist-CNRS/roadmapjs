@@ -81,8 +81,8 @@ var TimelineBox = React.createClass({
   }
 });
 
-var qs = require('qs');
-var ask = {
+var mqs = require('mongodb-querystring');
+var qry = {
   "alt" : "raw",
   "$query" : {
     "_content.json.date" : {
@@ -99,11 +99,7 @@ var ask = {
   },
   "$limit" : 20
 }
-var opt = {
-  filter: bury,
-  encode: false
-}
 ReactDOM.render(
-  <TimelineBox url={String('/data/*?').concat(qs.stringify(ask, opt))} pollInterval={2000} />,
+  <TimelineBox url={String('/data/*?').concat(mqs.stringify(qry))} pollInterval={2000} />,
   document.getElementById('example')
 );

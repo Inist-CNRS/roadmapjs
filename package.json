@@ -30,6 +30,7 @@
     "latinize": "^0.2.0",
     "marked": "^0.3.3",
     "moment": "^2.9.0",
+    "mongodb-querystring": "^1.0.0",
     "nconf": "^0.7.1",
     "node-trello": "^1.0.1",
     "qs": "^6.1.0",

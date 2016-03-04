@@ -7,7 +7,7 @@ var mongoHostPort = process.env.MONGODB_PORT ? process.env.MONGODB_PORT.replace(
 module.exports = {
   "connectionURI": 'mongodb://' + mongoHostPort + '/roadmapjs',
   "collectionName": "data",
-  "browserifyModules" : [ "qs", "async", "jquery",  "react", "react-dom" ],
+  "browserifyModules" : [ "qs", "async", "jquery",  "react", "react-dom", "mongodb-querystring" ],
   "rootURL" : "index.html",
   "routes": [
     "table.js"
