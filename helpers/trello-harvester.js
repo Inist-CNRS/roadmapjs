@@ -9,12 +9,14 @@ var path = require('path')
   , marked   = require('marked')
   , async    = require('async')
   , latinize = require('latinize')
+  , tlnp     = require('./trello-list-name-parser.js');
   ;
+
+moment.locale('fr');
 
 var errors = [];
 
 module.exports = function (targetDirectory,  config, trelloHarvesterCb) {
-  moment.locale('fr');
   var t = new Trello(config.key, config.token);
 
   async.eachSeries(Object.keys(config.boards), function (boardKey, cbBoardFinished) {
@@ -35,43 +37,21 @@ module.exports = function (targetDirectory,  config, trelloHarvesterCb) {
           lists.forEach(function (list) {
             boardLists[list.id] = { listName: list.name };
 
-            try {
-              var range = list.name.split('-').map(function(s) { return s.trim(); });
-              if (range.length == 1) {
-                // if trello list name is for example 2014
-                // then range[0] = 2014 and range[1] = 2015
-                if (new RegExp('^[0-9]+$').test(range[0])) {
-                  range[1] = '' + (parseInt(range[0], 10) + 1);
-                }
-              }
-              // fix date string (ex: Aout vs Août)
-              range = range.map(function (d) {
-                return d.replace('Aout', 'Août')
-                .replace('Fevrier', 'Février')
-                .replace('Decembre', 'Décembre');
-              });
-              // parse date string as javascript date
-              range = range.map(function (d) {
-                if (new RegExp('^[0-9]+$').test(d)) {
-                  // if trello list name is for example 2014
-                  return moment(d, "YYYY");
-                } else {
-                  // if trello list name is for example Décembre 2014
-                  return moment(d, "MMMM YYYY");
-                }
-              });
+            var range = tlnp(list.name);
+            if (range instanceof Error) {
+              boardLists[list.id].invalidDate = true;
+              var errMsg = 'Error: invalid date in board ' + boardKey + ' list ' + boardLists[list.id].listName + ' ' + range;
+              errors.push([range, errMsg]);
+              console.error(errMsg);
+            } else {
               boardLists[list.id].range      = range;
               boardLists[list.id].rangeLabel = 'entre ' + range[0].format('MMMM YYYY') + ' et ' + range[1].format('MMMM YYYY');
               boardLists[list.id].date       = range[0].add(Math.round(range[1].diff(range[0], 'days')/2), 'days');
               boardLists[list.id].dateLabel  = boardLists[list.id].date.format('YYYY-MM-DD');
               boardLists[list.id].dateLabel2 = boardLists[list.id].date.format('DD MMM YYYY');
               boardLists[list.id].dateLabel3 = boardLists[list.id].date.format('DD MMMM YYYY');
-            } catch (err) {
-              boardLists[list.id].invalidDate = true;
-              var errMsg = 'Error: invalid date in board ' + boardKey + ' list ' + boardLists[list.id].listName + ' ' + err;
-              errors.push([err, errMsg]);
-              console.error(errMsg);
             }
+
           });
           cb(err, boardInfo, boardLists)
         });
