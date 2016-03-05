@@ -4,3 +4,8 @@ node_js:
 install: true
 services:
   - mongodb
+script:
+  - npm test
+cache:
+  directories:
+  - node_modules
