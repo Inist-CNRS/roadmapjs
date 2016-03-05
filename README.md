@@ -5,6 +5,7 @@ A nodejs/reactjs application parsing Trello roadmap boards and displaying a nice
 
 [![Build Status](https://travis-ci.org/Inist-CNRS/roadmapjs.svg?branch=master)](https://travis-ci.org/Inist-CNRS/roadmapjs)
 [![Dependencies Status](https://david-dm.org/Inist-CNRS/roadmapjs.png)](https://david-dm.org/Inist-CNRS/roadmapjs)
+
 [![Docker status](http://dockeri.co/image/inistcnrs/roadmapjs)](https://hub.docker.com/r/inistcnrs/roadmapjs/)
 
 ## Install and run
