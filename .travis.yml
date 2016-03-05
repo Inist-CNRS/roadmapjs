@@ -1,10 +1,13 @@
 language: node_js
 node_js:
-  - "4.3.1"
+  - 4.3.1
 services:
   - mongodb
 script:
   - npm test
 cache:
   directories:
-  - node_modules
+    - node_modules
+notifications:
+  slack:
+    secure: coWQUCjcDeKn9FF/tydUEyQg/9nVs+YGB+jnMnFJd8jrz9QirntqF5tZzTPq70TE6WCJxvoIqspBcDOoa9uN2GEm+hRu7GssapfPVDztx9wVL/oL5Ffq+e08LSnPllKjJLPn+brGFZJVDvYGhrUjSLp3Bmkt7lVYeymIoPQqPmR203y3fKYt582yRBMOE1fag96G0ZgeT9QPxvgFQsPjyxpFoAk9kKuCz/LE02ut16GNekmfeX2YWajOlS7VUUJMwL/aXWmLvsKSSabHxdkpYKePBasz1AxvwlA3lsUd/kpi7UNIbgyY/+/7C3Zwn3n221Wu99AwvIDkmnNZEeQuo6BU8glmHVqaPPuqibTBnm+F8KLtwgQXqEcNEEBpto7R2P49FzC8xNU4XHjvq5w/val9qUbB9z4sHpXXQ2EHG7vvpIOnvK74OAn5cTDDKIwqjq9xAYZ1bLFCKP/TfHt1H1i8/Kt2XMsaOCK+5KO33z60Hb5BIcy2N7A43k7eC/koIHx56SJba+07JT3SENE8jGTC38dLlQJkZcw93BScISniSJyUDvX2Sn4ziWoGkkHamqDcbm3i0b9INuN4Q6qhnv30Qvf/zBr31KIe/Nk+EwiGORiXUH5qJ3lT/EiJENHQHEx5lDsb14Vvmvhyqv+FRQ+dUsPFwBqrzTowwvQcg0c=
