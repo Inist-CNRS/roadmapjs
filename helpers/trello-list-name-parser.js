@@ -68,6 +68,19 @@ module.exports = function (listName) {
       }
     });
 
+    // handle year for the first part of the range 
+    // if year is not indicated
+    //   "XXXXXX janvier-mars 2016"
+    if (!new RegExp('[0-9]+$').test(range[0])) {
+      res = new RegExp('([0-9]+)$').exec(range[1]);
+      if (res) {
+        var year = res[1];
+        range[0]  += ' ' + year;
+      } else {
+        return new Error('Trello list name do not have years in the second part: ' + listName);
+      }
+    }
+
     // parse as a date first string and second string
     if (new RegExp('^[0-9]+$').test(range[0])) {
       range[0] = moment(range[0], "YYYY");

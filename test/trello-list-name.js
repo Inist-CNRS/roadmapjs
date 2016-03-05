@@ -1,7 +1,7 @@
 /*jshint node:true,laxcomma:true*/
 /* global describe, it */
 'use strict';
-var assert = require('assert');
+var assert = require('chai').assert;
 var tlnp   = require('../helpers/trello-list-name-parser.js');
 
 describe('the trello list name parser', function () {
@@ -41,11 +41,11 @@ describe('the trello list name parser', function () {
     assert.equal(range[1].format('YYYY-MM-DD'), '2016-01-01');
   });
 
-  var listNameMMA = 'janvier-mars 2016';
+  var listNameMMA = 'janvier-mars 2015';
   it('should parse "' + listNameMMA + '"', function() {
     var range = tlnp(listNameMMA);
-    assert.equal(range[0].format('YYYY-MM-DD'), '2016-01-01');
-    assert.equal(range[1].format('YYYY-MM-DD'), '2016-04-01');
+    assert.equal(range[0].format('YYYY-MM-DD'), '2015-01-01');
+    assert.equal(range[1].format('YYYY-MM-DD'), '2015-04-01');
   });
 
   var listNameMMA2 = 'XXXXXXX janvier-mars 2016';
@@ -53,6 +53,12 @@ describe('the trello list name parser', function () {
     var range = tlnp(listNameMMA2);
     assert.equal(range[0].format('YYYY-MM-DD'), '2016-01-01');
     assert.equal(range[1].format('YYYY-MM-DD'), '2016-04-01');
+  });
+
+  var listNameMM = 'janvier-mars';
+  it('should parse "' + listNameMM + '"', function() {
+    var range = tlnp(listNameMM);
+    assert.instanceOf(range, Error, listNameMM + ' is not enough precise cause do not have a year in the string');
   });
 
   var listNameTA = '1er trimestre 2016';
