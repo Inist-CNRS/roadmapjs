@@ -1,7 +1,7 @@
 {
   "name": "roadmapjs",
-  "version": "0.0.0",
-  "description": "...",
+  "version": "1.0.0",
+  "description": "A nodejs/reactjs application parsing Trello roadmap boards and displaying a nice project roadmap as a visual vertical timeline.",
   "main": "index.js",
   "bin": {
     "roadmapjs": "./roadmapjs"
