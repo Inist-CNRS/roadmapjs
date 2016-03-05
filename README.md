@@ -1,5 +1,9 @@
 # RoadmapJS
 
+[![Build Status](https://travis-ci.org/Inist-CNRS/roadmapjs.svg?branch=master)](https://travis-ci.org/Inist-CNRS/roadmapjs)
+
+A nodejs/reactjs application parsing Trello roadmap boards and displaying a nice project roadmap as a visual vertical timeline.
+
 ## Install and run
 
 Without docker:
