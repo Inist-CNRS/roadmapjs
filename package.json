@@ -12,7 +12,8 @@
     "start": "./roadmapjs",
     "debug": "DEBUG=castor*,console* ./node_modules/.bin/nodemon ./roadmapjs",
     "debug-docker": "docker-compose -f ./docker-compose.dev.yml up",
-    "lint": "jshint --exclude-path node_modes */**/*.js"
+    "lint": "jshint --exclude-path node_modes */**/*.js",
+    "lint2": "eslint --no-ignore *.js heartbeats/ helpers/ loaders/ test/ views/assets/"
   },
   "keywords": [],
   "contributors": [
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^2.3.0",
     "istanbul": "^0.4.2",
     "jshint": "^2.9.1",
     "mocha": "^2.4.5",
