@@ -47,7 +47,7 @@ The same but with docker (advantage: do not need to have mongodb and nodejs isnt
 git clone https://github.com/Inist-CNRS/roadmapjs.git
 cd roadmapjs
 npm install
-npm debug-docker
+npm run debug-docker
 # or just: docker-compose -f docker-compose.dev.yml up
 # the app is listening at http://127.0.0.1:3000/
 # then open another terminal and your can freely edit the code
