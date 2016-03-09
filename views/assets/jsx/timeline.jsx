@@ -26,9 +26,11 @@ var TimelineBlock = React.createClass({
             <a className="cd-link" id={this.props.block.idCard} href={'#' + this.props.block.idCard}>
               <h2>{this.props.block.title}</h2>
             </a>
-            <p dangerouslySetInnerHTML={{__html: this.props.children}} />
-            <a href="#0" className="cd-read-more">Read more</a>
+            <p className="cd-desc" dangerouslySetInnerHTML={{__html: this.props.block.desc}} />
             <span className="cd-date">{this.props.block.rangeLabel}</span>
+            <a className="cd-trello" href={this.props.block.trelloLink}>
+              <img src="/assets/img/trello.png" alt="Carte trello" width="16px" />
+            </a>
           </div>
       </div>
     );
@@ -90,14 +92,14 @@ var qry = {
     },
     "$or": [
       {
-        "_content.json.projectKey" : "ISTEX-RD"
+        "_content.json.projectKey" : "ezPAARSE"
       },
       {
         "_content.json.projectKey" : "ISTEX-API"
       }
     ]
   },
-  "$limit" : 20
+  "$limit" : 50
 }
 ReactDOM.render(
   <TimelineBox url={String('/data/*?').concat(mqs.stringify(qry, {}))} pollInterval={2000} />,
