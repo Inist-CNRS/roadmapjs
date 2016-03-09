@@ -100,6 +100,6 @@ var qry = {
   "$limit" : 20
 }
 ReactDOM.render(
-  <TimelineBox url={String('/data/*?').concat(mqs.stringify(qry))} pollInterval={2000} />,
+  <TimelineBox url={String('/data/*?').concat(mqs.stringify(qry, {}))} pollInterval={2000} />,
   document.getElementById('example')
 );
