@@ -74,6 +74,16 @@ var TimelineBox = React.createClass({
     this.loadDataFromServer();
     //setInterval(this.loadDataFromServer, this.props.pollInterval);
   },
+  componentDidUpdate: function () {
+    // once render is done, try to scroll to the 
+    // aimed block.
+    // ie: scroll to the choosen hash (trello card)
+    if (document.location.hash) {
+      $('html, body').animate({
+        scrollTop: $(document.location.hash).offset().top
+      }, 1000);
+    }
+  },
   render: function() {
     return (
       <section id="cd-timeline" className="cd-container">
