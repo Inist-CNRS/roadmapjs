@@ -12,6 +12,7 @@
     "start": "./roadmapjs",
     "debug": "DEBUG=castor*,console* nodemon ./roadmapjs",
     "debug-docker": "docker-compose -f ./docker-compose.dev.yml up",
+    "build-docker": "docker build -t roadmapjs --build-arg http_proxy --build-arg https_proxy .",
     "lint": "jshint --exclude-path node_modes */**/*.js",
     "lint2": "eslint --no-ignore *.js heartbeats/ helpers/ loaders/ test/ views/assets/"
   },
