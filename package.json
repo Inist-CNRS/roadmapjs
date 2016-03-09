@@ -7,10 +7,10 @@
     "roadmapjs": "./roadmapjs"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
+    "test": "mocha",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- -R spec",
     "start": "./roadmapjs",
-    "debug": "DEBUG=castor*,console* ./node_modules/.bin/nodemon ./roadmapjs",
+    "debug": "DEBUG=castor*,console* nodemon ./roadmapjs",
     "debug-docker": "docker-compose -f ./docker-compose.dev.yml up",
     "lint": "jshint --exclude-path node_modes */**/*.js",
     "lint2": "eslint --no-ignore *.js heartbeats/ helpers/ loaders/ test/ views/assets/"
