@@ -97,7 +97,10 @@ var qry = {
       }
     ]
   },
-  "$limit" : 20
+  "$limit" : 20,
+  "$orderby" : {
+    "_content.json.date" : 1
+  }
 }
 ReactDOM.render(
   <TimelineBox url={String('/data/*?').concat(mqs.stringify(qry))} pollInterval={2000} />,
